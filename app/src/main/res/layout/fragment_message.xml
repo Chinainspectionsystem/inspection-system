@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ice.edupatrol.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+       android:orientation="vertical"
+        android:background="@drawable/bg_txt">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:text="公告" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="18dp"
+            android:textColor="#3ecdc9"
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:text="教务处通知：下午集中巡查全校体育课。"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

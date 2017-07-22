@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFF</color>
+    <color name="colorPrimaryDark">#3ecdc9</color>
+    <color name="colorAccent">#3ecdc9</color>
+    <color name="gesture_lock_unselected">#bdbdbd</color>
+    <color name="gesture_lock_selected">#3ecdc9</color>
+    <color name="gesture_lock_selected_dark">#3A9E81</color>
+</resources>

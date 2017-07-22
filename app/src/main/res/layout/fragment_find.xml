@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ice.edupatrol.FindFragment">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center|top"
+            android:weightSum="1">
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="巡查课堂"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/linearLayout3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="45dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="-10dp"
+                    android:gravity="center"
+                    android:text="学院"/>
+                <Spinner
+                    android:id="@+id/collage"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="时间"/>
+
+                <Spinner
+                    android:id="@+id/class_time"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:text="教室名"/>
+    <EditText
+        android:id="@+id/classroom"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+      />
+
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="班级详情"
+                    android:textColor="#FFFFFF"
+                    android:background="#3ecdc9"
+                    android:id="@+id/btn_search"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="巡查此班"
+                    android:textColor="#FFFFFF"
+                    android:background="#3ecdc9"
+                    android:id="@+id/btn_select"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="100dp"
+               />
+
+            </LinearLayout>
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                 />
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="com.ice.edupatrol.MainActivity"
+    style="@style/ImageTranslucentTheme"
+    android:weightSum="1">
+
+
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="524dp"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <FrameLayout
+                android:id="@+id/mainPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                >
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/drawerLayout_l"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                >
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/image_tx"
+                    android:layout_width="118dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/log3" />
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_view1">
+                </ListView>
+            </LinearLayout>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/own"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_main_1"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="消息"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/own1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_main_2"
+            android:background="#FFFFFF"
+            android:layout_weight="1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:text="我的巡查"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/own2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_main_3"
+            android:background="#FFFFFF"
+android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="巡查分析"
+                android:background="#FFFFFF"
+                />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

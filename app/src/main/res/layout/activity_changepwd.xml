@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_view"
+    tools:context="com.ice.edupatrol.ChangepwdActivity">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColor="#000"
+        android:id="@+id/oldpwd"
+        android:hint="原来密码"
+        android:layout_marginTop="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/upwd"
+        android:textColor="#000"
+        android:hint="新的密码"
+        android:layout_below="@+id/oldpwd"
+        android:layout_alignStart="@+id/oldpwd" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColor="#000"
+        android:id="@+id/upwds"
+        android:hint="重复密码"
+        android:layout_below="@+id/upwd"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="确认修改"
+        android:textColor="#FFFFFF"
+        android:background="#3ecdc9"
+        android:id="@+id/btn_change"
+        android:layout_below="@+id/upwds"
+        android:layout_alignStart="@+id/upwds"
+        android:layout_marginTop="89dp" />
+</RelativeLayout>

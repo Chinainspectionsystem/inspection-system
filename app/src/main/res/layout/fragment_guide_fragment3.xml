@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guide3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp">
+
+        <Button
+            android:layout_width="164dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="开启巡查"
+            android:textColor="#FFFFFF"
+            android:background="#3ecdc9"
+            android:id="@+id/open"/>
+    </FrameLayout>
+
+</RelativeLayout>

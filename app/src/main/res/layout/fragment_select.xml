@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ice.edupatrol.SelectFragment">
+<ScrollView
+    android:scrollbars="none"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="课堂纪律"
+            />
+
+        <RatingBar
+            style="Android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="2"
+            android:id="@+id/ratingBar_s"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout8">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="教师仪表"/>
+            <RatingBar
+                style="Android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2"
+                android:id="@+id/ratingBar_t"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/linearLayout5"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="讲课质量"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:id="@+id/textView" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/seekBar"
+           />
+        <TextView
+            android:id="@+id/score_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center" />
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout9">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="学生听课情况"/>
+            <SeekBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/seekBar2"
+                />
+            <TextView
+                android:id="@+id/score_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout6">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="缺勤人数"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/number1"
+                android:layout_width="100dp"
+                android:text="0"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout11">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="玩手机人数"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/number3"
+                android:layout_width="100dp"
+                android:text="0"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout7">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="上课睡觉人数"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/number2"
+                android:layout_width="100dp"
+                android:text="0"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout18">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="其他备注"/>
+            <EditText
+                android:inputType="text"
+                android:id="@+id/number4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="#FFFFFF"
+            android:background="#3ecdc9"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn_send"
+          android:layout_gravity="center|bottom" />
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>
